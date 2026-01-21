@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrightNest Learning — System Vault</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#070A10',
+            panel: 'rgba(255,255,255,0.06)',
+            panelDark: 'rgba(0,0,0,0.35)',
+            textMain: '#EDEEF3',
+            muted: 'rgba(237,238,243,0.72)',
+            gold: {
+              100: '#F6D37A',
+              500: '#C8922D',
+              900: '#8A5A12',
+            }
+          },
+          backgroundImage: {
+            'gold-gradient': 'linear-gradient(135deg, rgba(246,211,122,0.22), rgba(138,90,18,0.18))',
+            'radial-gold': 'radial-gradient(120% 140% at 30% 10%, rgba(246,211,122,0.45), rgba(200,146,45,0.18) 60%, rgba(0,0,0,0) 100%)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+    body {
+      background-color: #070A10;
+      color: #EDEEF3;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .gold-glow {
+      box-shadow: 0 0 20px rgba(246, 211, 122, 0.15);
+    }
+    .hero-gradient {
+      background: radial-gradient(90% 80% at 55% 40%, rgba(246,211,122,0.15), rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.76) 100%);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
